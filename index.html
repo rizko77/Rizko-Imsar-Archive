@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Rizko Imsar - Portfolio">
+    <meta name="description" content="Portofolio Rizko Imsar, seorang Frontend Developer & Content Creator dengan berbagai karya inovatif.">
+    <meta name="keywords" content="Rizko Imsar, Frontend Developer, Portfolio, Teknologi, Web Portofolio, GitHub, KokoDocs, Rizko Imsar 2.0, web portofolio github, portofolio pribadi, web portofolio github indonesia">
+    <meta name="author" content="Rizko Imsar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Rizko Imsar - Portfolio">
+    <meta property="og:description" content="Portofolio Rizko Imsar, seorang Frontend Developer & Content Creator dengan berbagai karya inovatif.">
+    <meta property="og:image" content="https://rizkoimsar.netlify.app/img/logo.png">
+    <meta property="og:url" content="https://rizkoimsar.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rizko Imsar - Portfolio & Developer">
+    <meta name="twitter:description" content="Portofolio Rizko Imsar, seorang Frontend Developer & Content Creator.">
+    <meta name="twitter:image" content="https://rizkoimsar.netlify.app/img/logo.png">
+
+    <!-- Title Shortcut -->
+    <meta name="application-name" content="Rizko Imsar">
+    <meta name="apple-mobile-web-app-title" content="Rizko Imsar">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+
+    <!-- Canonical Tag (Mencegah Duplikasi Konten) -->
+    <link rel="canonical" href="https://rizkoimsar.netlify.app/">
+
+    <!-- Schema.org Structured Data untuk Google -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Rizko Imsar", 
+          "url": "https://rizkoimsar.netlify.app/", 
+          "description": "Portofolio Rizko Imsar, seorang Frontend Developer & Content Creator dengan berbagai karya inovatif.",
+            "author": {
+                "@type": "Person",
+                "name": "Rizko Imsar"
+                "url": "https://rizkoimsar.netlify.app/"
+            },
+          "sameAs": [
+            "https://github.com/rizko77",
+            "https://instagram.com/rizkoimsar_",
+            "https://www.youtube.com/@RizkoImsar2.0",
+            "https://open.spotify.com/artist/2iYphIUHD3mXQSJF3rHyeH"
+            ]
+        }
+        </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizko Imsar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a0ca3, #882a8b);
+            color: #fff;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Sticky -->
+    <nav class="fixed w-full top-0 z-50 bg-[#231b38] shadow-lg">
+        <div class="container mx-auto px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="img/logo.png" alt="Logo" class="h-8" loading="lazy">
+                <span class="text-2xl font-bold text-white">Rizko Imsar</span>
+            </a>
+            
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-pink-400">Tentang Saya</a></li>
+                <li><a href="sertificate.html" class="hover:text-pink-400">Sertifikat</a></li>
+                <li><a href="contact.html" class="hover:text-pink-400">Kontak</a></li>
+                <li><a href="social.html" class="hover:text-pink-400">Sosial</a></li>
+            </ul>
+            <!-- Toggle Mobile Menu -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1e1e2f] py-4">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-pink-400">Tentang Saya</a></li>
+                <li><a href="sertificate.html" class="hover:text-pink-400">Sertifikat</a></li>
+                <li><a href="contact.html" class="hover:text-pink-400">Kontak</a></li>
+                <li><a href="social.html" class="hover:text-pink-400">Sosial</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Spasi agar konten tidak tertutup navbar -->
+    <div class="h-16"></div>
+
+    <!-- Home / Welcome Section -->
+    <section id="home" class="py-32 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold text-white animate-fade-in">Halo, Saya Rizko Imsar</h1>
+            <p class="text-lg text-gray-300 mt-4 animate-fade-in delay-200">
+                Seorang <span class="text-pink-400">Frontend Developer</span> & <span class="text-blue-400">Content Creator</span> yang berfokus pada teknologi, desain, dan inovasi.
+            </p>
+            <p class="text-lg text-gray-300 mt-2 animate-fade-in delay-400">
+                Mari berkolaborasi dan buat sesuatu yang luar biasa!
+            </p>
+            <div class="mt-6 flex justify-center space-x-4 animate-fade-in delay-500">
+                <a href="#produk" class="bg-pink-500 px-6 py-3 rounded-full font-semibold text-lg hover:bg-pink-600 transition">
+                    Lihat Karya
+                </a>
+                <a href="#contact" class="border-2 border-white px-6 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aktifitas/Karya Section -->
+    <section id="produk" class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+            <!-- Website -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">Website Dokumentasi</h3>
+                    <a href="https://kokodocs.netlify.app/" target="_blank" class="bg-pink-500 px-3 py-1 rounded text-sm hover:bg-pink-600">🔗 Open</a>
+                </div>
+                <iframe src="https://kokodocs.netlify.app/" width="100%" height="400"></iframe>
+            </div>
+
+            <!-- Chat AI -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">ChatBot AI</h3>
+                    <a href="https://kokodoxz-ai.netlify.app/" target="_blank" class="bg-pink-500 px-3 py-1 rounded text-sm hover:bg-pink-600">🔗 Open</a>
+                </div>
+                <iframe src="https://kokodoxz-ai.netlify.app/" width="100%" height="400"></iframe>
+            </div>
+            
+            <!-- GitHub -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">GitHub Profile</h3>
+                    <a href="https://github.com/rizko77/" target="_blank" class="bg-pink-500 px-3 py-1 rounded text-sm hover:bg-pink-600">🔗 Open</a>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <img src="https://github.com/rizko77.png" class="w-24 h-24 rounded-full shadow-lg" alt="GitHub Avatar">
+                </div>
+                <div class="flex justify-center mt-4">
+                    <img src="https://github-readme-stats.vercel.app/api?username=rizko77&show_icons=true&theme=radical"
+                         class="rounded-lg shadow-lg" alt="GitHub Stats">
+                </div>
+            </div>
+            
+
+            <!-- TikTok Embed -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">TikTok Profile</h3>
+                    <a href="https://www.tiktok.com/@rizkoimsar" target="_blank" class="bg-red-500 px-3 py-1 rounded text-sm hover:bg-green-600">
+                        🔗 Open
+                    </a>
+                </div>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@rizkoimsar" 
+                    data-unique-id="rizkoimsar" data-embed-type="creator" 
+                    style="max-width: 780px; min-width: 288px;">
+                    <section> 
+                        <a target="_blank" href="https://www.tiktok.com/@rizkoimsar?refer=creator_embed">
+                            @rizkoimsar
+                        </a> 
+                    </section>
+                </blockquote> 
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+
+
+            
+
+            <!-- Spotify -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">Spotify Profile</h3>
+                    <a href="https://open.spotify.com/artist/2iYphIUHD3mXQSJF3rHyeH" target="_blank" class="bg-green-500 px-3 py-1 rounded text-sm hover:bg-green-600">🔗 Open</a>
+                </div>
+                <iframe src="https://open.spotify.com/embed/artist/2iYphIUHD3mXQSJF3rHyeH"
+                        width="100%" height="400"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media">
+                </iframe>
+            </div>
+
+            <!-- YouTube -->
+            <div class="bg-gray-800 shadow-md p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-semibold text-white">YouTube Channel</h3>
+                    <a href="https://www.youtube.com/@RizkoImsar2.0" target="_blank"
+                       class="bg-red-500 px-3 py-1 rounded text-sm hover:bg-red-600">🔗 Open</a>
+                </div>
+                <iframe width="100%" height="400"
+                    src="https://www.youtube.com/embed/j2uwTR8YoKs"
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-6 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-wrap justify-center items-center gap-6">
+                <div class="flex justify-center items-center">
+                    <img src="https://pngimg.com/uploads/github/github_PNG23.png" class="h-10" alt="GitHub Logo">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://www.hatimeria.com/images/marketing/vercel-logo.png" class="h-10" alt="Vercel Logo">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://static-00.iconduck.com/assets.00/heroku-icon-2048x575-6q78za1p.png" class="h-10" alt="Heroku Logo">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Netlify_logo_%282%29.svg/512px-Netlify_logo_%282%29.svg.png" class="h-10" alt="Netlify Logo">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-logo-png-transparent.png" class="h-10" alt="NodeJS Logo">
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://miro.medium.com/v2/resize:fit:480/1*MGcLJS1ZvMFcBA94PXn16Q.png" class="h-10" alt="Code Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Modern -->
+    <footer class="bg-[#1e1e2f] text-white py-8">
+        
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            
+            <p class="text-gray-400 text-sm">Copyright &copy; 2021 Development By ❤️ Rizko Imsar</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://instagram.com/rizkoimsar_" target="_blank" class="hover:text-pink-400"><i data-lucide="instagram"></i></a>
+                <a href="https://www.youtube.com/@RizkoImsar2.0" target="_blank" class="hover:text-pink-400"><i data-lucide="youtube"></i></a>
+                <a href="https://www.linkedin.com/in/rizkoimsar" target="_blank" class="hover:text-pink-400"><i data-lucide="linkedin"></i></a>
+                <a href="https://github.com/rizko77" target="_blank" class="hover:text-pink-400"><i data-lucide="github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Script untuk Toggle Mobile Menu -->
+    <script>
+        lucide.createIcons();
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            let menu = document.getElementById("mobile-menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>
