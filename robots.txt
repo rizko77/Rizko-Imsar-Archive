@@ -1,4 +1,6 @@
 User-agent: *
+Allow: / 
+Allow: /embed.js
 Disallow:
 
 Sitemap: https://rizkoimsar.netlify.app/sitemap.xml
