@@ -1,16 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="title" content="Portofolio Rizko Imsar">
-    <meta name="description" content="Daftar karya dan proyek Rizko Imsar sebagai Frontend Developer & Content Creator.">
+    <meta name="description" content="Profil lengkap, skill, pengalaman, dan proyek Rizko Imsar.">
     <meta name="author" content="Rizko Imsar">
     <title>Portofolio - Rizko Imsar</title>
     <link rel="icon" href="img/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
             background: linear-gradient(135deg, #1e1e2f, #3a0ca3, #882a8b);
@@ -23,61 +21,112 @@
             border-radius: 1rem;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
         }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
-<body class="font-sans animate-fade-in">
+<body class="font-sans">
 
 <!-- Navbar -->
 <nav class="glass fixed w-full top-0 left-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-2">
-            <img src="img/logo.png" alt="Logo" class="h-8">
+        <a href="#" class="flex items-center space-x-2">
+            <img src="https://rizkoimsar.netlify.app/img/logo.png" alt="Logo" class="h-8">
             <span class="text-xl font-semibold">Rizko Imsar</span>
         </a>
-        <ul class="hidden md:flex space-x-6 text-sm font-medium">
-            <li><a href="index.html" class="hover:text-purple-300">Beranda</a></li>
-            <li><a href="portofolio.html" class="text-purple-300 font-semibold">Portofolio</a></li>
-            <li><a href="index.html#sosial" class="hover:text-purple-300">Sosial</a></li>
+        <!-- Tombol Hamburger -->
+        <button class="md:hidden text-white focus:outline-none" id="nav-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <!-- Menu -->
+        <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 text-sm font-medium absolute md:static top-16 left-0 w-full md:w-auto bg-[#1e1e2f] md:bg-transparent px-4 md:px-0 py-4 md:py-0">
+            <li><a href="portofolio.html" class="block py-2 text-purple-300 font-semibold">Portofolio</a></li>
+            <li><a href="#about" class="block py-2 hover:text-purple-300">Tentang</a></li>
+            <li><a href="#karya" class="block py-2 hover:text-purple-300">Karya</a></li>
+            <li><a href="#sosial" class="block py-2 hover:text-purple-300">Sosial</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Portofolio Section -->
-<section class="pt-32 pb-20 px-4">
-    <h1 class="text-4xl font-bold text-center mb-12">Portofolio Rizko Imsar</h1>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project 1 -->
-        <div class="glass p-6">
-            <h3 class="text-xl font-semibold mb-2">KokoDocs</h3>
-            <p class="text-purple-200 mb-4">Sistem dokumentasi API yang ringan dan stylish untuk developer modern.</p>
-            <a href="https://kokodocs.netlify.app" target="_blank" class="inline-block bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-full text-sm">Lihat Proyek</a>
-        </div>
+<!-- Konten -->
+<section class="pt-32 px-4 pb-20 max-w-4xl mx-auto space-y-10">
 
-        <!-- Project 2 -->
-        <div class="glass p-6">
-            <h3 class="text-xl font-semibold mb-2">KokoChat AI</h3>
-            <p class="text-purple-200 mb-4">Bot AI berbasis web dengan integrasi Gemini API, ringan dan responsif.</p>
-            <a href="https://kokochat-ai.netlify.app" target="_blank" class="inline-block bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-full text-sm">Lihat Proyek</a>
+    <!-- Profil -->
+    <div class="glass p-6 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+        <img src="https://rizkoimsar.netlify.app/img/logo.png" alt="Rizko Imsar" class="w-32 h-32 rounded-full border-2 border-purple-400 shadow-md" />
+        <div>
+            <h1 class="text-3xl font-bold">Rizko Imsar</h1>
+            <p class="text-purple-200 mt-2">Frontend Developer | Content Creator | Indie Developer</p>
+            <p class="text-sm mt-4">Saya seorang kreator digital yang fokus pada pengembangan web, AI, dan teknologi open-source dengan desain modern dan ringan.</p>
         </div>
-
-        <!-- Project 3 -->
-        <div class="glass p-6">
-            <h3 class="text-xl font-semibold mb-2">YT2Audio</h3>
-            <p class="text-purple-200 mb-4">Konverter YouTube ke MP3 berbasis web, cepat dan aman.</p>
-            <a href="https://yt2audio.netlify.app" target="_blank" class="inline-block bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-full text-sm">Lihat Proyek</a>
-        </div>
-
-        <!-- Tambahkan lebih banyak projek di sini jika ada -->
-        
     </div>
+
+    <!-- Skill -->
+    <div class="glass p-6">
+        <h2 class="text-2xl font-semibold mb-4">Keahlian</h2>
+        <ul class="list-disc list-inside space-y-1 text-purple-100">
+            <li>HTML, CSS (Tailwind), JavaScript</li>
+            <li>Python (AI Chatbot, Flask)</li>
+            <li>GitHub, Netlify, SEO Optimization</li>
+            <li>Content Creation (YouTube, Spotify)</li>
+            <li>Linux & Ubuntu Optimization</li>
+        </ul>
+    </div>
+
+    <!-- Pengalaman -->
+    <div class="glass p-6">
+        <h2 class="text-2xl font-semibold mb-4">Riwayat Pengalaman</h2>
+        <ul class="space-y-4 text-purple-100">
+            <li>
+                <strong>2023–Sekarang</strong><br/>
+                Founder & Developer – <a href="https://kokodocs.netlify.app" class="text-purple-300 hover:underline">KokoDocs API</a>
+            </li>
+            <li>
+                <strong>2022–2023</strong><br/>
+                Developer – YT2Audio (Platform converter audio YouTube)
+            </li>
+            <li>
+                <strong>2021–2022</strong><br/>
+                Content Creator – YouTube Channel <a href="https://www.youtube.com/@RizkoImsar2.0" class="text-purple-300 hover:underline">@RizkoImsar2.0</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Proyek -->
+    <div id="karya" class="glass p-6">
+        <h2 class="text-2xl font-semibold mb-4">Proyek Unggulan</h2>
+        <ul class="space-y-4">
+            <li>
+                <strong>KokoDocs API</strong><br/>
+                Sistem dokumentasi API modern & ringan.  
+                <a href="https://kokodocs.netlify.app" target="_blank" class="text-purple-300 hover:underline">Kunjungi</a>
+            </li>
+            <li>
+                <strong>KokoChat AI</strong><br/>
+                Chatbot AI berbasis Gemini API.  
+                <a href="#" class="text-purple-300 hover:underline">Demo</a>
+            </li>
+            <li>
+                <strong>YT2Audio</strong><br/>
+                Konverter audio YouTube ke MP3/OGG.  
+                <a href="https://yt2audio.netlify.app" target="_blank" class="text-purple-300 hover:underline">Kunjungi</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Kontak -->
+    <div id="sosial" class="glass p-6">
+        <h2 class="text-2xl font-semibold mb-4">Kontak & Sosial</h2>
+        <ul class="space-y-2 text-purple-100">
+            <li>📧 Email: <a href="mailto:rizkoimsar@gmail.com" class="text-purple-300 hover:underline">rizkoimsar@gmail.com</a></li>
+            <li>📍 GitHub: <a href="https://github.com/rizko77" class="text-purple-300 hover:underline">github.com/rizko77</a></li>
+            <li>▶️ YouTube: <a href="https://www.youtube.com/@RizkoImsar2.0" class="text-purple-300 hover:underline">@RizkoImsar2.0</a></li>
+            <li>🎧 Spotify: <a href="https://open.spotify.com/artist/2iYphIUHD3mXQSJF3rHyeH" class="text-purple-300 hover:underline">Rizko Imsar</a></li>
+        </ul>
+    </div>
+
 </section>
 
 <!-- Footer -->
@@ -85,8 +134,13 @@
     <p class="text-purple-200">&copy; 2025 Rizko Imsar. All rights reserved.</p>
 </footer>
 
+<!-- Script Hamburger Menu -->
 <script>
-    lucide.createIcons();
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
 </script>
 </body>
 </html>
